@@ -1539,8 +1539,8 @@ box-sizing: content-box;
     height: 100%;
     border-radius: 1rem;
     box-shadow: 0.5rem 0 0.5rem 0.8rem rgb(32, 30, 30);
-  transform: perspective(1000px) rotatex(45deg);
-       
+  /*transform: perspective(1000px) rotatex(45deg);
+    */   
 }
 
 /*.disco-inclinado-final{
