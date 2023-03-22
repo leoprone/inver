@@ -1496,8 +1496,8 @@ filter: sepia(1);
 .container-circle{
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   position: relative;
   
   z-index: 4;
