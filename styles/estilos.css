@@ -1496,8 +1496,8 @@ filter: sepia(1);
 .container-circle{
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   position: relative;
   
   z-index: 4;
@@ -1506,10 +1506,10 @@ filter: sepia(1);
 
 @keyframes Disc-Rotation{
   0%{
-   transform: perspective(100px) rotateZ(0deg); 
+   transform: rotateZ(0deg); 
   }
   100%{
-    transform: perspective(100px) rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
