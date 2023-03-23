@@ -1504,7 +1504,7 @@ filter: sepia(1);
   
 }
 
-@keyframes Disc-Rotation{
+@keyframes Disc-Rotatio{
   0%{
    transform: rotateZ(0deg); 
   }
