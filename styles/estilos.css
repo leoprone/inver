@@ -1444,7 +1444,7 @@ top: 10px;
   
 }
 
-@keyframes Disc-Rotation{
+@keyframes Disc-Rotatio{
   0%{
    transform: rotateZ(0deg); 
   }
