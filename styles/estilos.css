@@ -1,0 +1,1724 @@
+
+:root{
+  /*INVERNÁCULUS*/
+  --first-color: rgb(177, 173, 173);
+  --second-color: rgb(153, 98, 98);
+  --title-color: rgb(221, 217, 217);
+  --h1-color: rgb(97, 97, 97);
+  --link-color: aquamarine;
+  --album-color: #d890e8;
+  --black-play: black;
+  
+  --bg-color: rgb(79, 89, 112);
+}
+
+@font-face {
+  font-family: "Invernaculus";
+  src: url("../assets/Invernaculus.ttf");
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: "Invernaculus";
+}
+
+*,*::after, *::before {
+         box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+     padding: 0;  
+     
+    
+    
+     
+      background: linear-gradient(90deg, rgb(124, 145, 145) 0%, rgb(78, 78, 100) 60%, rgb(54, 46, 46) 100%);
+     
+      }
+
+img{
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
+
+
+
+  /* ********** HeroImage ********** */
+
+@keyframes hero-opacity{
+  0%{
+    opacity: 1;
+  }
+  50%{
+   opacity: 0.35;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+
+
+
+  .hero-image {
+   /* background-color: var(--bg-color);
+    */
+
+    background: linear-gradient(90deg, rgb(91, 92, 92) 0%, rgb(38, 38, 41) 35%, rgb(14, 14, 17) 100%);
+     
+     
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*filter: sepia(1) blur(0.06rem);
+    background-color: black;
+    animation: hero-opacity 2.5s linear infinite;
+  */
+  }
+  
+  .hero-image-opacity {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+
+  
+
+  /*.fixed-image-container{
+    background-image: url("../assets/pozzo-carbi-grande.png");
+    position: sticky;
+    background-color: rgb(18, 21, 27);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 180vw;
+
+    top: -150px;
+    z-index: -1;
+  }*/
+    
+
+@keyframes hero-humo{
+  0%{
+    transform: translateX(100px) translatey(250px);
+  }
+  25%{
+    transform: translateX(100px) translateY(60px);
+  }
+  50%{
+    transform: translateX(100px) translatey(60px);
+  }
+  100%{
+    transform: translateX(100px) translateY(100px);
+  }
+}
+
+.hero-humo{
+  width: 10px;
+  height: 1px;
+  box-shadow: 0 0 8rem 10rem white;
+  border-radius: 50%;
+  position: relative;
+
+  top: -420px;
+  
+  
+  animation: hero-humo 3s linear infinite;
+}
+
+
+
+  /*HUMO*/
+
+
+/*
+@keyframes humo{
+  0%{
+    transform: translateX(0%) translateY(0px);
+  }
+  25%{
+    transform: translateX(-40px) translateY(-50px);
+  }
+  50%{
+    transform: translateX(0%) translateY(0px);
+
+    }
+  75%{
+    transform: translateX(0) translateY(50px);
+
+  }
+  100%{
+    transform: translateX(0) translateY(0);
+  }
+}*/
+
+
+@keyframes humo{
+  0%{
+    transform: translateX(275px) translateY(-270px);
+  }
+  100%{
+    transform: translateX(-280px) translateY(340px);
+  }
+ 
+ /* 75%{
+    transform: translateX(0) translateY(50px);
+
+  }
+  100%{
+    transform: translateX(0) translateY(0);
+  }*/
+}
+
+.humo-container{
+  
+  position: sticky;
+  width: 20vw;
+  min-height: 10vh;
+  top: 50vh;
+ 
+}
+
+.humo{
+  background-color: rgb(181, 179, 179);
+  box-shadow: 0 0 6rem 9rem rgb(119, 111, 105);
+  width: 1px;
+  height: 1px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  
+  animation: humo 45s linear infinite;
+}
+
+
+/*VIDEO "EN LAS SOMBRAS*/
+
+.tv-image{
+box-sizing: border-box;
+  background-image: url("../assets/tv-grande.jpg");
+  background-repeat: no-repeat;
+  background-size: 135%;
+  background-position: 50% 0%;
+  position: relative;
+  width: 280px;
+  height: 356px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5%;
+box-shadow: 1rem 0rem 1rem 0.1rem rgb(12, 11, 11);
+border: 1rem solid rgb(54, 44, 41);
+  overflow: hidden;
+  
+}
+
+
+.en-las-sombras-container{
+  position: relative;
+  width: 170px;
+  height: 115px;
+  background-color: rgb(0, 0, 0);
+  transform: perspective(1000px) rotate(-4deg) rotateX(7deg) rotateY(13deg);
+  left: 12.7%;
+ 
+  top: 10%;
+
+  box-shadow: 0 0 0.5rem 0.2rem rgb(0, 0, 0);
+}
+
+.video-en-las-sombras-container{
+  background-color: black;
+  left: 0px;
+top: 10px;
+  position: relative;
+  width: 170px;
+  height: 95.625px;
+  
+
+  filter: blur(0.05rem) sepia(0.3);
+}
+
+
+.video-en-las-sombras-container>*{
+ position: absolute;
+ width: 100%;      
+ height: 100%;
+ 
+ 
+
+ }
+
+
+
+
+ 
+
+
+
+
+/*DISCOGRAFÍA*/
+
+
+.text-shadow{
+  text-shadow: 5px 0 8px black;
+}
+
+.discography-container{
+  padding-top: 1px;
+       
+    background: linear-gradient(90deg, rgb(124, 145, 145) 0%, rgb(78, 78, 100) 60%, rgb(54, 46, 46) 100%);
+     
+     
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: auto;
+    
+
+    
+}
+
+
+
+.section-title{
+    /*border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    */
+    margin: 50px auto;
+    padding: 8px 16px;
+    width: 250px;
+    text-align: center;
+    color: var(--title-color);
+    font-size: 2.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 80;
+    font-weight: 100;
+    
+}
+
+@media screen and (min-width: 768px){
+  .section-title{
+    position: relative;
+    top: 0;
+  }
+
+  .discografia-h2 {
+    top: -1500px;
+    position: relative;
+  }
+}
+
+
+
+
+.second-color{
+  color: var(--second-color);
+}
+
+ 
+.track-name-tach-felino{    
+  width: 240px;
+  font-size: 16px;
+  transition: transform 0.2s ease-in;
+ 
+ font-weight: 100;
+color: black;
+
+}
+  
+  .track-name-dias-lime{   
+    font-weight: 100; 
+      width: 240px;
+      font-size: 18px;
+      transition: transform 0.2s ease-in;
+     
+      color: rgb(92, 162, 110);
+   color: rgb(255, 255, 255);
+  
+}
+
+.album-container{
+    
+    margin: 180px auto 0 auto;
+    padding: 0px;
+    width: 280px;
+    height: 280px;/*según el caso*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;/*reparte espacio sobrante considerando orillas*/
+    align-items: center;
+    
+    font-size: 14px;
+    
+  }
+
+.album-container h3{
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 25px;
+    font-weight: 100;
+    
+    width: 200px;
+    color: var(--first-color);
+}
+
+
+.fondo-dias-lime{
+  
+  background-image: url(../assets/img_dias_lime.jpg);
+background-position: 47.5% 83%;
+background-size: 420%;
+filter: sepia(1);
+}
+
+.second-color{
+  color: var("--second-color");
+}
+
+
+/*---------biografía---------*/
+
+.bio{
+  margin-top: 80px;
+  
+}
+
+.ul{
+    width: 280px;
+    height: 280px;
+    border-radius: 4px;
+    position: relative;
+    top: -54px;
+    z-index: 1;
+    box-shadow: 0.6rem 0rem 0.5rem 0.2rem rgb(37, 34, 34);
+}
+
+.padding-top-20px{
+    padding-top: 20px;
+}
+
+.padding-top-50px{
+    padding-top: 50px;
+}
+ .ul li{
+     list-style: none;
+      
+      height: 20px;
+      position: relative;
+      left: -20px;
+  }
+
+   .ul a{
+       text-decoration: none;
+       display: flex;
+       flex-direction: row;
+       font-size: 17px;
+       text-align: center;
+       
+      transition: color 0.2s ease-in;
+   }     
+
+
+.track-name{
+  font-weight: 100;
+    width: 240px;
+    font-size: 16px;
+    transition: transform 0.2s ease-in;
+    color: rgb(249, 119, 141);
+    
+}
+
+/*----------------------INSECTA ---------------------------*/
+/*
+#insecta{
+  color: rgb(169, 100, 136);
+}
+*/
+
+.track-name:hover{
+    transform: scale(1.02);
+    color: red;
+}
+   
+   .btn-play{
+        
+    width: 15px;
+    height: 15px;
+    
+    background-color: var(--first-color);
+    clip-path: polygon(50% 0%, 50% 100%, 100% 50%);
+    transition: transform 0.2s linear;
+}
+
+.btn-play-border{
+    border: 2px solid rgb(70, 69, 69);
+    background-color: var(--black-play);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-right: 6px;
+   
+    
+}
+.btn-play:hover{
+    transform: scale(1.2);
+    background-color: rgb(169, 100, 136);
+    
+    
+}
+
+
+
+
+/*para abrir todas las tapas*/
+
+
+@keyframes abrir-tapa{
+  0%{
+    transform-origin: 0 0;
+     transform: perspective(2000px) rotateY(0deg);
+  }
+  100%{
+   transform-origin: 0% 0%;
+   transform: perspective(2000px) rotateY(-87deg);
+}
+     }
+
+
+.abrir-tapa{
+  
+  animation: abrir-tapa 3s ease-in-out both;
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*GLADSTONE ROAD*/
+
+
+
+
+.ul-gr{
+    width: 280px;
+    height: 280px;
+    background-color: rgb(89, 220, 220);
+    position: relative;
+    top: -100px;
+    left: 0px;
+    z-index: 1;
+
+}
+
+.ul-gr li{
+    list-style: none;
+    height: 30px;
+    width: 250px;
+    position: relative;
+    left: -20px;
+    
+    top: -10px;
+}
+    
+.ul-gr a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    text-align: center;
+    
+    transition: color 0.2s ease-in;
+}
+
+
+.contact-card h5{
+  font-size: 24px;
+  font-weight: 100;
+}
+
+
+.email a{
+  color: aqua;
+  font-family: 'invernaculus', Courier, monospace;
+  font-size: 18px;
+  
+}
+
+
+.album-cover-gr{
+    background-image: url("../assets/img_tapa_gs_abrir.jpg");
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -380px;
+    width: 280px;
+    height: 280px;
+    position: relative;
+       
+    /*animation: abrir-tapa 4s ease both;
+    animation-play-state: paused;
+    */
+    z-index: 15;
+    
+}
+
+
+.gr-container{
+  margin-top: 600px;
+}
+
+ 
+
+
+.gr-image-background{
+    background-image: url("../assets/img_fondo_bajo_gs.jpg");
+    background-size: 113%;
+    background-repeat: no-repeat;
+    background-position: -21.5px 0;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    top: -482px;
+    z-index: 0;
+
+}
+
+
+.boton-normal{
+  
+  background-color: rgb(197, 143, 43, 0);
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  
+  border: hsl(60, 16%, 96%, 0);
+  margin-top: 20px;
+
+  z-index: 100;
+}
+
+
+.boton-dias-lime{
+  
+  background-color: rgba(223, 123, 123, 0);
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  margin-top: 20px;
+  border: hsl(60, 16%, 96%, 0);
+  
+  
+  z-index: 100;
+}
+
+/*GLADSTONE ROAD TABLET/DESKTOP*/
+
+@media screen and (min-width: 768px){
+      
+  .gr-container{
+    margin-top: 0;
+  }
+
+
+.ul-gr{
+    width: 340px;
+    height: 340px;
+    background-color: rgb(89, 220, 220);
+    position: relative;
+    top: -100px;
+    left: 0px;
+    z-index: 1;
+
+}
+
+.ul-gr li{
+    margin-left: 20px;
+    list-style: none;
+    width: 290px;
+    height: 35px;
+    position: relative;
+    
+}
+    
+.ul-gr a{
+  
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18.2px;
+    text-align: center;
+    
+    transition: color 0.2s ease-in;
+}
+
+
+.album-cover-gr{
+    background-image: url("../assets/img_tapa_gs_abrir.jpg");
+    background-color: aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: 350px;
+
+    z-index: 15;
+}
+
+.gr-image-background{
+    background-image: url("../assets/img_fondo_bajo_gs.jpg");
+    background-size: 113%;
+    background-repeat: no-repeat;
+    background-position: -25px 0;
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    top: 564px;
+    z-index: 0;
+
+}
+
+
+.btn-abrir-gr{
+    position: relative;
+    z-index: 50;
+    background-color: rgb(31, 15, 136);
+    color: #f3f3f3;
+    width: 50px;
+    padding-top: 2px;
+    font-size: 18px;
+    top: 10px;
+    left: 140px;
+}
+
+}
+/*INFINITO 2*/
+
+@keyframes antena1{
+
+    0%{
+        transform: rotate(-30deg);
+        transform-origin: 0 100%;
+    }
+    30%{
+        
+        transform-origin: 0 100%;
+        transform: rotate(5deg);
+    }
+    50%{
+        transform-origin: 0 100%;
+        transform: rotate(-10deg);
+    }
+    
+    70%{
+        transform-origin: 0 100%;
+        transform: rotate(0deg);
+    }
+    
+    90%{
+        transform-origin: 0 100%;
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+}
+
+
+
+
+@keyframes antena2{
+    0%{
+        
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform-origin: 0 100%;
+        transform: rotate(-80deg);
+    }
+    70%{
+        transform-origin: 0 100%;
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+
+}
+.antena1{
+    background-color: rgb(169, 100, 136);
+     
+    width: 1.5px;
+    height: 16px;
+    position: absolute;
+   z-index: 12;
+   top: 32px;
+   left: 120px;
+   transform: rotate(-30deg);
+
+   animation: antena1 6s linear infinite;
+   
+}
+
+.antena2{
+    background-color: rgb(169, 100, 136);
+     
+     width: 1.5px;
+    height: 16px;
+    position: absolute;
+   z-index: 12;
+   top: 34px;
+   left: 113.5px;
+   transform: rotate(-30deg);
+
+   animation: antena2 4s ease-in infinite;
+   
+}
+
+
+.album-cover{
+    
+    background-image: url("../assets/img_insecta_mejor.jpg");
+     
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    background-position: 53% 56.4%;
+    width: 280px;
+    height: 280px;
+    position: absolute;
+   z-index: 10;
+   
+       
+}
+
+
+.bg-fondo-inf2{
+    background-color:rgb(31, 29, 29);
+  margin-top: -6px;
+}
+
+.bg-fondo-inf2 a{
+    font-size: 14px;
+    color: #d9d7d7;
+    
+}
+ 
+.bg-fondo-inf2 ul{
+  margin-top: -30px;
+  
+}
+
+.bg-fondo-inf2 li{
+  margin-bottom: 8px;
+  
+}
+
+
+/*TACH FELINO*/
+
+
+@keyframes cola1{
+    0%{
+        
+        transform-origin: 0 100%;
+        transform: rotate(-35deg);
+    }
+    30%{
+        transform-origin: 0 100%;
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+    70%{
+        transform-origin: -10 100%;
+        transform: rotate(0deg);
+    }
+ 
+    100%{
+        transform-origin: 0 100%;
+        transform: rotate(-35deg);
+    }
+
+}
+
+.cola1{
+    background-color: rgb(5, 5, 5);
+    
+    border-bottom: rgb(0, 0, 0) solid 0px;
+    border-top: #dadada solid 0.01px;
+    border-left: #d8d6d6 solid 0.01px;
+    border-right: #d4d4d4 solid 0.01px;
+
+    border-radius: 5px 5px 5px 5px;
+     width: 5.5px;
+    height: 13px;
+    position: absolute;
+   z-index: 12;
+   top: 198px;
+   left: 188px;
+
+   animation: cola1 5s ease-in infinite;
+}
+
+@keyframes cola2{
+    0%{
+        
+        transform-origin: 0 100%;
+        transform: rotate(-50deg);
+    }
+    30%{
+        transform-origin: 0 100%;
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+    70%{
+        transform-origin: 0 100%;
+        transform: rotate(0deg);
+    }
+ 
+    100%{
+        transform-origin: 0 100%;
+        transform: rotate(-50deg);
+    }
+
+}
+
+.cola2{
+    background-color: rgb(0, 0, 0);
+    
+    border-bottom: rgb(0, 0, 0) solid 0px;
+    border-top: #ffffff solid 0.05px;
+    border-left: #ffffff solid 0.05px;
+    border-right: #ffffff solid 0.05px;
+
+    border-radius: 5px 5px 5px 5px;
+     width: 5.5px;
+    height: 13px;
+    position: absolute;
+   z-index: 12;
+   top: 105.5px;
+   left: 224px;
+
+   animation: cola2 10s ease-in infinite;
+}
+
+
+/*DÍAS LIME*/
+
+.tapa-general{
+  margin-top: 21px;
+}
+
+/*INFINITO 1*/
+
+.bg-fondo-inf1{
+    border-radius: 5px;
+   margin-top: -12px;
+    background-color: rgb(31, 27, 11);
+}
+.bg-fondo-inf1 li{
+  
+  margin-bottom: 8px;
+}
+.bg-fondo-inf1 a{
+    color: #988d72;
+    font-size: 15px;
+}
+
+.bg-fondo-inf1 ul{
+  position: relative;
+  height: 280px;
+  top: -30px;
+  
+}
+  
+
+/*  3   */
+
+
+.ul-3{
+    width: 280px;
+    height: 280px;
+    position: relative;
+    top: -42px;
+    box-shadow: 0.5rem 0.3rem 0.5rem 0.1rem rgb(121, 116, 116);
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+  }
+
+.ul-3 li{
+    list-style: none;
+    height: 15px;
+    margin-bottom: 5px;
+    
+    width: 280px;
+    position: relative;
+  
+    left: -40px;
+}
+
+.ul-3 a{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+    height: 15px;
+    
+}
+
+.bg-fondo-3{
+    background-color: rgb(2, 2, 2);
+    border: 7px solid white;
+    
+}
+
+.bg-fondo-3 li:first-child{
+    margin-top: -10px;
+}
+
+.bg-fondo-3 a{
+    color: rgb(130, 128, 128);
+}
+.bg-fondo-3 .btn-play-border{
+  width: 20px;
+  height: 20px;
+  
+  
+  
+}
+.bg-fondo-3 .btn-play{
+  width: 12px;
+  height: 12px;
+  
+}
+
+.bg-white{
+  background-color: white;
+  
+}
+
+/*SIN RESPIRAR*/
+
+.bg-fondo-sin-respirar{
+    background-color: black;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem rgb(121, 116, 116);
+    top: -68px;
+}
+
+.bg-fondo-sin-respirar ul{
+  top: -10px;
+  position: relative;
+  
+}
+.bg-fondo-sin-respirar a{
+    color: rgb(232, 21, 21);
+    transition: color 0.6s ease;
+    font-size: 14px;
+}
+
+.bg-fondo-sin-respirar a:hover{
+  color: rgb(191, 186, 186);
+}
+
+
+
+
+/*EXHIBICIÓN CONDICIONADA*/
+
+
+.bg-fondo-exh-condic{
+    background-color: rgb(251, 184, 153);
+    position: relative;
+    top: -74px;
+}
+
+.bg-fondo-exh-condic ul{
+  
+  top: 1.5px;
+  position: relative;
+}
+  
+.bg-fondo-exh-condic a{
+    color: rgb(19, 19, 19);
+    font-size: 14pxs;
+}
+
+.track-name-e-c{
+    width: 260px;
+    height: 27.5px;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 14px;
+      background-color: #d9d7d7;
+}
+
+.bg-fondo-exh-condic li{
+    height: 27.8px;
+   
+}
+
+
+.track-name-e-c:hover{
+        transition: 0.2s ease;
+        transform: scale(1.01);
+        color: red;
+    }
+
+
+    /*VERSIÓN TABLET*/
+
+
+  @media screen and (min-width: 768px){
+    .discography-container{
+      margin-top: -1400px;
+    }
+ 
+
+   
+.albums{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
+}
+
+.album-cover-gr{
+    top: 128px;
+}
+
+.gr-image-background{
+    top: 344px;
+}
+
+.gr-container{
+
+    
+    position: absolute;
+    width: 340px;
+    height: 680px;
+    left: 33%;
+    
+}
+
+.ul-gr{
+    top: -55px;
+}
+
+.position-central{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    left: 0%;
+    top: -86px;
+}
+
+.inf2-position-central{
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    top: 86px;
+}
+
+.btn-abrir-gr{
+    top: 70px;
+}
+
+  }
+
+
+
+
+      /*BIO*/
+
+  .transp-foto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(49, 77, 155, 0);
+    z-index: 10;
+  }
+
+.galery-container{
+  padding-top: 30px;
+  
+  width: 95%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+  .galery{
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-around;
+    transform: perspective(1000px) rotateY(30deg) rotateZ(-10deg);
+    filter: invert(1) sepia(1);
+    transition: all 1s;
+    position: relative;
+    z-index: 10;
+  }
+
+  
+  .transp2-foto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(49, 77, 155, 0);
+    z-index: 10;
+  }
+
+  .galery-2{
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -600px;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-around;
+    transform: perspective(1000px) rotateY(-60deg) rotatex(30deg) rotateZ(70deg);
+    filter: invert(1) sepia(1);
+    transition: all 1s;
+    position: relative;
+    z-index: 2;
+
+  }
+
+.normal-galery{
+  width: 300px;
+  transition: all 1s;
+  transform: none;
+  filter: none;
+  position: relative;
+  z-index: 100;
+}
+
+
+  .foto{
+    position: relative;
+   background-color: rgb(27, 24, 23);
+    max-width: 100%;
+    height: 100%;
+    border: solid 10px rgb(27, 24, 23);
+    
+   
+  
+  }
+
+  
+
+/*
+     
+     @keyframes carasDerechas{
+       0%{
+         opacity: 1;
+       }
+       35%{
+         opacity: 0;
+       }
+       50%{
+         opacity: 0;
+       }
+       65%{
+         opacity: 0;
+       }
+       100%{
+         opacity: 1;
+       }
+     }
+
+     @keyframes carasAlReves{
+       0%{
+         opacity: 1;
+       }
+       35%{
+         opacity: 1;
+       }
+       50%{
+         opacity: 0;
+       }
+       70%{
+         opacity: 0;
+       }
+      75%{
+        opacity: 1;
+      }
+       100%{
+         opacity: 1;
+       }
+     }
+
+     @keyframes rotate-360{
+       0%{
+         transform: perspective(2000px) rotateY(0deg);
+       }
+       100%{
+         transform: perspective(2000px) rotateY(360deg);
+       }
+      }
+    
+
+
+     .biography{
+      
+       margin-bottom: 70px;
+     }
+     
+     .text-bio-container{
+       width: 340px;
+       height: 340px;
+       background-color: #501464;
+       margin-left: auto;
+       margin-right: auto;
+       
+       
+       
+     }
+     .text-bio-container p{
+       position: relative;
+       width: 90%;
+       height: 100%;
+       
+       overflow-y: scroll;
+
+       overflow-x: hidden;
+        font-size: 1.2rem;
+       text-align: center;
+       margin-left: 8%;
+       
+
+       
+     }
+     
+     
+
+
+     .bio-container{
+       margin-left: auto;
+       margin-right: auto;
+       
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+
+
+     .bio{
+       background-image: url("../assets/android-icon-192x192.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 340px;
+       height: 340px;
+       position: relative;
+       background-color: aqua;
+       /*
+       margin: 200px 0;
+       border-radius: 50%;
+       box-shadow: 0 0 8rem 8rem white;*/
+     /*}
+
+     
+
+     .caras-al-reves{
+       width: 100%;
+       height: 100%;
+       background-image: url("../assets/caras-al-reves.jpg");
+       background-repeat: no-repeat;
+       background-color: wheat;
+       background-size: 110%;
+       background-position: 50% 70%;
+       position: relative;
+       
+       border-radius: 50%;
+      
+       
+       
+       
+      
+     
+       animation: carasAlReves 12s linear infinite;
+     }
+
+     
+     .caras-superpuestas-container{
+       width: 100%;
+       height: 100%;
+       position: relative;
+       margin-left: auto;
+       margin-right: auto;
+       position: absolute;
+      top: 0%;
+       
+       border-radius: 50%;
+       animation: carasDerechas 12s ease infinite;
+       
+     }
+      
+     .caras-superpuestas-container img{
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       border-radius: 50%;
+     }
+
+
+
+    
+
+     @media screen and (min-width: 768px){
+
+
+        .text-bio-container{
+            width: 450px;
+           height: 450px;
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+       .bio{
+           width: 450px;
+           height: 450px;
+        
+       }
+
+    
+
+     }
+
+
+
+
+
+
+            /*AGENDA
+
+
+     @keyframes scale{
+       0%{
+         transform: scale(0.7);
+       }
+       25%{
+         transform: scale(1);
+       }
+       75%{
+         transform: scale(1);
+       }
+       100%{
+         transform: scale(0.7);
+       }
+     }
+
+
+
+     .agenda{
+       text-align: center;
+       width: 300px;
+       height: auto;
+       margin-left: auto;
+       margin-right: auto;
+       
+       position: relative;
+     }
+
+    
+
+     .agenda img{
+      
+       width: 100%;
+       height: 100%;
+       border-radius: 20px;
+       box-shadow: 0rem 0rem 0.5rem 0.5rem white;
+       margin-top: 30px;
+       
+     }
+
+
+     .entradas{
+         margin-top: 50px;
+         display: inline-block;
+         width: 100px;
+         height: 40px;
+         font-size: 20px;
+         background-color: black;
+         color: red;
+         text-decoration: none;
+         padding-top: 7px;
+         border: 1px solid rgb(128, 255, 255);
+         border-radius: 10px;
+         /*box-shadow: 0rem 0rem 0.5rem 0.2rem white;
+         animation: scale 2s ease-in-out infinite;
+     }
+
+     @media screen and (min-width: 768px){
+       .agenda{
+           width: 450px;
+           
+       }
+
+     }
+     */
+
+
+
+     /*TIENDA*/
+/*
+.tienda{
+         margin-top: 150px;
+         margin-bottom: 40vh;
+       text-align: center;
+     }
+
+     .enlace-tienda{
+       background-color: aquamarine;
+       width: 150px;
+       height: 50px;
+       margin-left: auto;
+       margin-right: auto;
+       padding-top: 12.5px;
+       border-radius: 1rem;
+     }
+
+     .enlace-tienda a{
+       color: red;
+       font-size: 25px;
+       font-weight: bold;
+       
+       text-decoration: none;
+     
+     }
+
+    
+    
+     @media screen and (min-width: 768px){
+       
+        .tienda{
+            margin-top: 200px;
+          text-align: center;
+        }
+      }
+ */
+
+
+
+
+  
+/*TOCADISCOS TODO CON CSS*/
+
+
+
+@media screen and (min-width: 768px){
+  .disc-container-total{
+    width: 340px;
+    height: 340px;
+    top: -1450px;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px){
+  .disc-container-total{
+    width: 340px;
+    height: 340px;
+    
+  }
+}
+
+/*DISC*/
+/*
+.tocadiscos{
+  background-image: url(../assets/tocadiscos.png);
+  background-size: 135%;
+  background-repeat: no-repeat;
+  background-position: -50px -60px;
+  width: 300px;
+  height: 300px;
+  
+  filter: sepia(0.3);
+  
+  position: relative;
+  top: -228px;
+  left: 92px;
+  width: 240px;
+  height: 60px;
+  background-color: #5c5c5c;
+  transform: perspective(1000px) rotatex(-45deg);
+ 
+}*/
+
+.disc-container-total{
+
+  position: relative;
+  width: 270px;
+  height: 270px;
+  
+  top: 30px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /*NO OLVIDAR DE PONER*/
+ 
+  transform: perspective(1000px) rotateX(45deg);    
+
+}
+.container-circle{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  
+  z-index: 4;
+  
+}
+
+@keyframes Disc-Rotation{
+  0%{
+   transform: perspective(100px) rotateZ(0deg); 
+  }
+  100%{
+    transform: perspective(100px) rotateZ(360deg);
+  }
+}
+
+.disc-rotation{
+  
+  animation: Disc-Rotation 1.818s 1s linear infinite;
+     
+}
+
+
+.disc-translate-insecta{
+    color: rgb(167, 176, 187);
+   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+   height: 100%;
+    border-radius: 50%;
+  
+    background-image: repeating-radial-gradient(rgb(26, 54, 51) 0% 1%, rgb(249, 119, 141) 2% 7%); 
+    
+  }
+
+
+.disc-translate-touch-felino{
+  color: rgb(167, 176, 187);
+ width: 100%;
+margin-right: auto;
+margin-left: auto;
+ height: 100%;
+  border-radius: 50%;
+
+  background-image: repeating-radial-gradient(rgb(90, 90, 90) 0% 1%, rgb(236, 232, 232) 2% 7%); 
+  
+}
+
+
+.disc-translate-dias-lime{
+    color: rgb(167, 176, 187);
+   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+   height: 100%;
+    border-radius: 50%;
+  
+    background-image: repeating-radial-gradient(rgb(37, 37, 37) 0% 1%, rgb(0, 0, 0) 2% 7%); 
+   
+  }
+
+
+.disco-inclinado{
+box-sizing: content-box;
+  background-color: rgb(112, 112, 111);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0 0.5rem 0.8rem rgb(32, 30, 30);
+     
+}
+
+/*.disco-inclinado-final{
+  transform: perspective(1000px) translateX(50%) translateY(110%) rotateX(70deg) rotateY(-2deg);
+}*/
+
+
+.hambre-tapa{
+  top: 35%;
+   text-align: center;
+   width: 100%;
+   
+   position: absolute;
+ }
+ .hambre-tapa img{
+   border-radius: 50%;
+   width: 30%;
+   height: 30%;
+     }
+ 
+
+     .video{
+      position: relative;
+      width: 100%;
+      height: 100%;
+     }
+     .video>*{
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+     }
+
+  .running{
+  
+    animation-play-state: running;
+  }
+  
+
+
+
