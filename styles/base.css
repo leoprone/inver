@@ -251,8 +251,8 @@ LOGO
 
 .header {
     position: fixed;
-    right: 5px;
-    bottom: 0;
+    right: 10px;
+    bottom: 10px;
     z-index: 999;
     padding: 1rem 2rem;
    
