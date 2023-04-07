@@ -1,0 +1,226 @@
+
+
+      
+  .anterior-siguiente{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+
+  .anterior-siguiente a{
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 14px;
+    color: rgb(177, 175, 175);
+  }
+
+  .dias-lime .anterior-siguiente a{
+    color: rgb(221, 221, 223);
+  }
+
+.canciones-h1{
+  color: white;
+  margin-top: 100px;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+}
+     
+.cancion-body{
+  width: 100%;
+  height: 100%;
+ 
+}
+
+
+.body-insecta{
+
+  background: linear-gradient(90deg, rgb(124, 145, 145) 0%, rgb(13, 78, 74) 1%, var(--insecta-rose) 80%);
+     
+}
+
+
+
+.body-tach-felino{
+
+  background: linear-gradient(90deg, rgb(124, 145, 145) 0%, black 30%, black 70%, rgb(124, 145, 145) 100%);
+     
+}
+
+
+.body-tach-felino .letra{
+  color: white;
+}
+
+
+
+.dias-lime{
+
+  /*background: linear-gradient(90deg, rgb(124, 145, 145) 0%, rgb(13, 78, 74) 1%, var(--insecta-rose) 80%);
+  */  
+  background-image: url("../assets/img_dias_lime.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -215px -50px;
+    
+
+}
+
+.dias-lime .letra{
+  color: white;
+}
+
+
+.letra{
+  margin-top: 50px;
+ font-weight: 100;
+ font-size: 18px;
+ width: 100%;
+ height: 50vh;
+ overflow-x: hidden;
+ overflow-y: scroll;
+ scroll-behavior: smooth;
+}
+
+.tema-individual{
+  width: 80vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  box-shadow: 0rem 0rem 3rem 0.5rem rgb(218, 215, 215);
+margin-top: 50px;
+margin-bottom: 30px;
+  overflow-x: hidden;
+border-radius: 10px;
+}
+
+
+.video-tema-individual-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+ z-index: 1;
+}
+
+.video-tema-individual{
+  
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+ 
+  transition: filter 1.5s linear;
+  top: 25%;
+ opacity: 0.5;
+
+}
+
+
+.video-tema-individual>*{
+ position: absolute;
+ width: 100%;      
+ height: 100%;
+ 
+}
+ 
+ 
+.volver a{
+  text-decoration: none;
+  background-color: rgb(10, 10, 10, 0.3);
+        width: 30px;
+        height: 14px;
+        font-size: 8px;
+        font-weight: 100;
+        border-radius: 20%;
+        
+        color: rgb(189, 183, 183);
+        display: block;
+        position: fixed;
+        bottom: 6%;
+        right: 5%;
+      padding: 2px;
+      
+        z-index: 100;
+}
+
+
+/*-------disc-rotate-------*/
+
+
+@keyframes Disc-Rotating{
+  0%{
+   
+      transform: rotateZ(0deg);
+ 
+  
+  }
+  100%{
+    transform: rotateZ(360deg);
+ 
+ 
+  }
+
+}
+.disc-rotating{
+  animation: Disc-Rotating 1.818s linear infinite;
+    
+}
+
+.disc-rotate-container-total{
+
+  width: 40vw;
+  height: 40vw;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /*NO OLVIDAR DE PONER*/
+
+  position: absolute;
+  
+left: 40%;
+top: 100%;
+
+}
+
+.disc-rotate-container-circle{
+  width: 85%;
+  height: 85%;
+  
+}
+
+.disc-rotate-translate{
+  position: relative;
+    color: rgb(30, 30, 31);
+   width: 100%;
+ top: -2%;
+ left: 5%;
+   height: 100%;
+    border-radius: 50%;
+   
+ z-index: 2;
+
+}
+
+.color-disc-insecta{
+  background-image: repeating-radial-gradient(rgb(26, 54, 51) 0% 1%, var(--insecta-rose) 2% 7%); 
+    
+
+}
+
+.color-disc-tach-felino{
+  background-image: repeating-radial-gradient(rgb(90, 90, 90) 0% 1%, rgb(236, 232, 232) 2% 7%); 
+    
+
+}
+
+.color-disc-dias-lime{
+  background-image: repeating-radial-gradient(rgb(37, 37, 37) 0% 1%, rgb(29, 27, 27) 2% 7%); 
+     
+
+}
