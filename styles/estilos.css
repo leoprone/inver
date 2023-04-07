@@ -1498,7 +1498,7 @@ transform: perspective(1000px) rotatez(5deg) translateX(10%) translateY(1%);
   }
 
 .normal-galery{
-  width: 300px;
+  width: 280px;
   transition: all 1s;
   transform: none;
   filter: none;
