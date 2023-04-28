@@ -198,10 +198,10 @@ box-shadow: 2px 0 1rem 0.3rem black;
 }
 
 .partitura pre{
-text-shadow: 1px 1px 0.5rem rgb(222, 91, 91);
+text-shadow: 2px 2px 0.5rem rgb(222, 91, 91);
   color: rgb(34, 33, 33);
-  font-size: 19px;
-  line-height: 28px;
+  font-size: 17px;
+  line-height: 26px;
 }
 
 
