@@ -744,7 +744,7 @@ color: rgb(188, 184, 184);
     position: absolute;
    z-index: 12;
    top: 200.5px;
-   left: 189.5px;
+   left: 188px;
 
    animation: cola1 5s ease-in infinite;
 }
@@ -790,7 +790,7 @@ color: rgb(188, 184, 184);
     position: absolute;
    z-index: 12;
    top: 105px;
-   left: 224.3px;
+   left: 223px;
 
    animation: cola2 10s ease-in infinite;
 }
