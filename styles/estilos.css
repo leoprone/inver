@@ -1,0 +1,2073 @@
+
+:root{
+  /*INVERNÁCULUS*/
+  --first-color: rgb(177, 173, 173);
+  --second-color: rgb(153, 98, 98);
+  --title-color: rgb(221, 217, 217);
+  --h1-color: rgb(97, 97, 97);
+  --link-color: aquamarine;
+  --album-color: #d890e8;
+  --black-play: black;
+  --insecta-rose: rgb(213, 105, 137);
+  --bg-color: rgb(79, 89, 112);
+}
+
+@font-face {
+  font-family: "Invernaculus";
+  src: url("../assets/Invernaculus.ttf");
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: "Invernaculus";
+}
+
+*,*::after, *::before {
+         box-sizing: inherit;
+}
+
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+.body-home{
+    margin: 0;
+     padding: 0;  
+     
+      /*
+     
+      background: linear-gradient(90deg, rgb(179, 167, 154) 0%, rgb(129, 131, 169) 30%, rgb(85, 83, 83) 100%);
+     
+      background: linear-gradient(90deg, rgb(186, 203, 238) 0%, rgb(156, 172, 180) 20%, rgb(81, 80, 88) 100%);
+     background: linear-gradient(90deg, rgb(229, 192, 162) 0%, rgb(193, 152, 137) 3%, rgb(158, 127, 127) 100%);
+   */
+   
+   /* background-image: url("../assets/foto_grupal1.jpg");
+   
+     
+   background-color: rgb(29, 28, 28);
+    background-color: rgb(24, 25, 32); 
+    background-color: rgb(55, 57, 71);*/
+   
+ 
+   /* background: linear-gradient(90deg, rgb(216, 114, 114) 0%, rgb(63, 6, 6) 40%, rgb(26, 12, 12) 100%);
+   */ 
+  /* background: linear-gradient(90deg, rgb(34, 33, 33) 0%, rgb(59, 57, 57) 40%, rgb(65, 56, 56) 100%);
+ */  
+  background: linear-gradient(90deg, rgb(197, 193, 193) 0%, rgb(155, 146, 146) 40%, rgb(24, 21, 21) 100%);
+  background: linear-gradient(90deg, rgb(18, 17, 17) 0%, rgb(69, 65, 65) 25%, rgb(40, 39, 39) 30%, rgb(40, 39, 39) 70%,rgb(7, 7, 7) 75%, rgb(18, 17, 17) 100%);
+  
+   background-size: 3.5%;
+ 
+    }
+
+
+   
+img{
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
+
+
+
+  /* ********** HeroImage ********** */
+
+@keyframes hero-opacity{
+  0%{
+    opacity: 1;
+  }
+  50%{
+   opacity: 0.35;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+
+
+
+  .hero-image {
+   /* background-color: var(--bg-color);
+    */
+
+    background: linear-gradient(90deg, rgb(91, 92, 92) 0%, rgb(38, 38, 41) 35%, rgb(14, 14, 17) 100%);
+     
+     
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*filter: sepia(1) blur(0.06rem);
+    background-color: black;
+    animation: hero-opacity 2.5s linear infinite;
+  */
+  }
+  
+  .hero-image-opacity {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+
+  
+
+  /*.fixed-image-container{
+    background-image: url("../assets/pozzo-carbi-grande.png");
+    position: sticky;
+    background-color: rgb(18, 21, 27);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 180vw;
+
+    top: -150px;
+    z-index: -1;
+  }*/
+    
+
+@keyframes hero-humo{
+  0%{
+    transform: translateX(100px) translatey(250px);
+  }
+  25%{
+    transform: translateX(100px) translateY(60px);
+  }
+  50%{
+    transform: translateX(100px) translatey(60px);
+  }
+  100%{
+    transform: translateX(100px) translateY(100px);
+  }
+}
+
+.hero-humo{
+  width: 10px;
+  height: 1px;
+  box-shadow: 0 0 8rem 10rem white;
+  border-radius: 50%;
+  position: relative;
+
+  top: -420px;
+  
+  
+  animation: hero-humo 3s linear infinite;
+}
+
+
+
+  /*HUMO*/
+
+
+/*
+@keyframes humo{
+  0%{
+    transform: translateX(0%) translateY(0px);
+  }
+  25%{
+    transform: translateX(-40px) translateY(-50px);
+  }
+  50%{
+    transform: translateX(0%) translateY(0px);
+
+    }
+  75%{
+    transform: translateX(0) translateY(50px);
+
+  }
+  100%{
+    transform: translateX(0) translateY(0);
+  }
+}*/
+
+
+@keyframes humo{
+  0%{
+    transform: translateX(275px) translateY(-270px);
+  }
+  100%{
+    transform: translateX(-280px) translateY(340px);
+  }
+ 
+ /* 75%{
+    transform: translateX(0) translateY(50px);
+
+  }
+  100%{
+    transform: translateX(0) translateY(0);
+  }*/
+}
+
+.humo-container{
+  
+  position: sticky;
+  width: 20vw;
+  min-height: 10vh;
+  top: 50vh;
+ 
+}
+
+.humo{
+  background-color: rgb(181, 179, 179);
+  box-shadow: 0 0 6rem 9rem rgb(119, 111, 105);
+  width: 1px;
+  height: 1px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  
+  animation: humo 45s linear infinite;
+}
+
+
+/*VIDEO "EN LAS SOMBRAS*/
+
+.tv-image{
+box-sizing: border-box;
+  background-image: url("../assets/tv-grande.jpg");
+  background-repeat: no-repeat;
+  background-size: 135%;
+  background-position: 50% 0%;
+  position: relative;
+  width: 280px;
+  height: 356px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5%;
+box-shadow: 1rem 0rem 1rem 0.1rem rgb(12, 11, 11);
+border: 1rem solid rgb(54, 44, 41);
+  overflow: hidden;
+  
+}
+
+
+.en-las-sombras-container{
+  position: relative;
+  width: 170px;
+  height: 115px;
+  background-color: rgb(0, 0, 0);
+  transform: perspective(1000px) rotate(-4deg) rotateX(7deg) rotateY(13deg);
+  left: 12.7%;
+ 
+  top: 10%;
+
+  box-shadow: 0 0 0.5rem 0.2rem rgb(0, 0, 0);
+}
+
+.video-en-las-sombras-container{
+  background-color: black;
+
+  
+  width: 170px;
+  height: 95.625px;
+  
+
+  filter: blur(0.05rem) sepia(0.3);
+}
+
+
+.video-en-las-sombras-container>*{
+ position: absolute;
+ width: 100%;      
+ height: 100%;
+ 
+ 
+
+ }
+
+
+
+ .video{
+  position: relative;
+  width: 100%;
+  height: 100%;
+ }
+ .video>*{
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+ }
+
+ 
+
+
+
+
+/*DISCOGRAFÍA*/
+
+
+.text-shadow{
+  text-shadow: 4px 0 8px black;
+}
+
+
+.discography-container{
+  
+position: relative;
+z-index: 0;
+
+       width: 270px;
+       height: auto;
+ /*      background-color: rgba(236, 221, 239, 0.1);
+background-image: url("../assets/hormiga1-video.jpg");
+ box-shadow: 5px 0 1rem 0.2rem rgb(36, 36, 36); 
+ border-radius: 30px;
+background-size: 1%;
+*/
+
+   
+
+    
+     margin-left: auto;
+     margin-right: auto;
+    margin-top: 120px;
+    transition: 4s;
+
+   /* background: linear-gradient(90deg, rgb(142, 146, 155) 0%, rgb(109, 116, 129) 20%, rgb(130, 127, 127) 100%);
+  */
+ 
+}
+
+
+
+
+
+/*------------generales para àlbumes --------*/
+
+
+.album-name{
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-size: 23px;
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  color: var(--first-color);
+}
+
+.albums{
+margin-left: auto;
+margin-right: auto;
+width: 250px;
+position: relative;
+z-index: 10;
+ 
+}
+
+
+
+
+.album-container{
+    
+    
+    margin: 0px auto 0 auto;
+
+    padding: 0px;
+    width: 243px;
+    height: 243px;/*según el caso*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;/* reparte espacio sobrante considerando orillas
+  */
+    align-items: center;
+    transform: perspective(1000px) scale(0.9);
+    font-size: 14px;
+    
+    
+  }
+
+.album-individual{
+
+  height: 400px;
+  padding-top: 20px;
+
+}
+  
+.album-activado{
+ margin-bottom: 280px;
+ transition: 4s;
+}
+
+.dias-lime-activado{
+  transition: 4s;
+  margin-bottom: 450px;
+}
+
+.discography-grande{
+  transition: 4s;
+  height: 1450px;
+}
+
+/*
+.disco-devuelto{
+  transition: 3s;
+  transform: perspective(1000px) translateY(20px) rotateX(-20deg);
+}
+*/
+
+
+.second-color{
+  color: var(--second-color);
+}
+
+
+/*---------biografía---------*/
+
+.bio{
+  margin-top: 80px;
+  
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+
+.ul{
+    width: 280px;
+    height: 280px;
+    border-radius: 4px;
+    position: relative;
+    top: -40px;
+    z-index: 1;
+   
+  }
+
+.padding-top-20px{
+    padding-top: 20px;
+}
+
+
+.padding-top-30px{
+  padding-top: 30px;
+}
+
+
+ .ul li{
+     list-style: none;
+      margin: 2px 0;
+      height: 20px;
+      position: relative;
+      left: -20px;
+  }
+
+   .ul a{
+       text-decoration: none;
+       display: flex;
+       flex-direction: row;
+       font-size: 17px;
+       text-align: center;
+       
+      transition: color 0.2s ease-in;
+   }     
+
+   
+   .btn-play{
+        
+    width: 15px;
+    height: 15px;
+    
+    background-color: var(--first-color);
+    clip-path: polygon(50% 0%, 50% 100%, 100% 50%);
+    transition: transform 0.2s linear;
+}
+
+.btn-play-border{
+    border: 2px solid rgb(70, 69, 69);
+    background-color: var(--black-play);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-right: 6px;
+   
+    
+}
+.btn-play:hover{
+    transform: scale(1.2);
+    background-color: rgb(169, 100, 136);
+    
+    
+}
+
+
+
+
+/*para abrir todas las tapas*/
+
+
+@keyframes abrir-tapa{
+  0%{
+    transform-origin: 0 0;
+     transform: perspective(2000px) rotateY(0deg);
+  }
+  100%{
+   transform-origin: 0% 0%;
+   transform: perspective(2000px) rotateY(-88deg);
+}
+     }
+
+
+
+
+
+
+.abrir-tapa{
+  position: absolute;
+  z-index: 80;
+  animation: abrir-tapa 3s ease-in-out both;
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+/*---------------IINSECTA---------------*/
+
+@keyframes antena1{
+
+    0%{
+        transform: rotate(-30deg);
+        transform-origin: 0 100%;
+    }
+    30%{
+        
+        transform-origin: 0 100%;
+        transform: rotate(5deg);
+    }
+    50%{
+        transform-origin: 0 100%;
+        transform: rotate(-10deg);
+    }
+    
+    70%{
+        transform-origin: 0 100%;
+        transform: rotate(0deg);
+    }
+    
+    90%{
+        transform-origin: 0 100%;
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+}
+
+
+
+
+@keyframes antena2{
+    0%{
+        
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform-origin: 0 100%;
+        transform: rotate(-80deg);
+    }
+    70%{
+        transform-origin: 0 100%;
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+
+}
+.antena1{
+    background-color: var(--insecta-rose);
+     
+    width: 1.5px;
+    height: 16px;
+    position: absolute;
+   z-index: 12;
+   top: 30px;
+   left: 119.5px;
+   transform: rotate(-30deg);
+
+   animation: antena1 3s linear infinite;
+   
+}
+
+.antena2{
+    background-color: var(--insecta-rose);
+     
+     width: 1.5px;
+    height: 16px;
+    position: absolute;
+   z-index: 12;
+   top: 34px;
+   left: 113px;
+   transform: rotate(-30deg);
+
+   animation: antena2 2s ease-in infinite;
+   
+}
+
+
+.album-insecta{
+    
+    background-image: url("../assets/img_insecta_mejor.jpg");
+     
+    background-repeat: no-repeat;
+
+    background-color: black;
+    background-size: 102.5%;
+    background-position: 53% 50%;
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    
+   z-index: 10;
+   
+       
+}
+
+
+
+
+
+.bg-insecta{
+  position: absolute;
+    background-color: var(--insecta-rose);
+    background-color: black;
+    background-image: url("../assets/hormiguero.jpg");
+    background-size: 140%;
+    background-position: -100px -10px;
+    background-repeat: no-repeat;
+    top: -18px;
+ 
+}
+
+
+
+.track-name-insecta{    
+  width: 240px;
+  font-size: 16px;
+  transition: transform 0.2s ease-in;
+ 
+ font-weight: 100;
+color: rgb(188, 184, 184);
+
+}
+
+
+.track-name-insecta:hover{
+  
+   color: rgb(166, 165, 165);;
+}
+
+
+
+
+.rotate-disc{
+ position: absolute;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+ 
+  
+}
+
+
+
+
+/*-----------------TACH FELINO-----------------*/
+
+
+@keyframes cola1{
+    0%{
+        
+        transform-origin: 0 100%;
+        transform: rotate(-35deg);
+    }
+    30%{
+        transform-origin: 0 100%;
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+    70%{
+        transform-origin: -10 100%;
+        transform: rotate(0deg);
+    }
+ 
+    100%{
+        transform-origin: 0 100%;
+        transform: rotate(-35deg);
+    }
+
+}
+
+.cola1{
+    background-color: rgb(5, 5, 5);
+    
+    border-bottom: rgb(0, 0, 0) solid 0px;
+    border-top: #dadada solid 0.01px;
+    border-left: #d8d6d6 solid 0.01px;
+    border-right: #d4d4d4 solid 0.01px;
+
+    border-radius: 5px 5px 5px 5px;
+     width: 5px;
+    height: 12px;
+    position: absolute;
+   z-index: 12;
+   top: 200.5px;
+   left: 188px;
+
+   animation: cola1 5s ease-in infinite;
+}
+
+@keyframes cola2{
+    0%{
+        
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+    30%{
+        transform-origin: 0 100%;
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+    70%{
+        transform-origin: 0 100%;
+        transform: rotate(0deg);
+    }
+ 
+    100%{
+        transform-origin: 0 100%;
+        transform: rotate(-30deg);
+    }
+
+}
+
+.cola2{
+    background-color: rgb(0, 0, 0);
+   
+    
+    border-bottom: rgb(0, 0, 0) solid 0px;
+    border-top: #ffffff solid 0.05px;
+    border-left: #ffffff solid 0.05px;
+    border-right: #ffffff solid 0.05px;
+
+    border-radius: 5px 5px 5px 5px;
+     width: 5px;
+    height: 11px;
+    position: absolute;
+   z-index: 12;
+   top: 105px;
+   left: 223px;
+
+   animation: cola2 10s ease-in infinite;
+}
+
+
+
+.bg-tach-felino{
+
+ 
+ 
+
+
+  position: absolute;
+    background-color: black;
+    background-image: url("../assets/img_interior_tach_felino.jpg");
+   background-size: 140%;
+background-position: 48% 40%;
+    top: -18px;
+ 
+
+}
+
+.bg-tach-felino ul{
+  padding-top: 75px;
+}
+
+.bg-tach-felino li{
+ 
+  height: 15px;
+}
+
+.tapa-tach-felino{
+    
+  background-image: url("../assets/img_tach_felino_sin_colas.jpg");
+   
+  background-repeat: no-repeat;
+
+  background-color: black;
+  background-size: 102.5%;
+  background-position: 53% 50%;
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  
+ z-index: 10;
+ 
+     
+}
+
+
+.track-name-tach-felino{    
+  width: 150px;
+  font-size: 10px;
+  transition: transform 0.2s ease-in;
+ 
+ font-weight: 100;
+color: rgb(190, 186, 186);
+margin-left: 45px;
+}
+  
+
+
+.track-name-tach-felino:hover{
+  
+  color: rgb(110, 108, 108);
+}
+
+
+
+
+
+
+
+.bg-white{
+  background-color: white;
+  
+}
+
+
+
+
+/*------------DÍAS LIME------------*/
+
+.bg-dias-lime{
+
+ 
+ 
+
+
+  position: absolute;
+    background-color: black;
+   
+    top: -18px;
+ 
+
+}
+
+
+
+.tapa-dias-lime{
+    
+  background-image: url("../assets/img_dias_lime.jpg");
+   
+  background-repeat: no-repeat;
+
+  background-color: rgb(120, 31, 31);
+  background-size: 102.5%;
+  background-position: 53% 50%;
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  
+ z-index: 10;
+ 
+     
+}
+
+
+.bg-dias-lime{
+  
+  background-image: url(../assets/img_dias_lime.jpg);
+background-position: 47.5% 83%;
+background-size: 420%;
+filter: sepia(1);
+}
+
+
+.track-name-dias-lime{   
+  font-weight: 100; 
+    width: 240px;
+    font-size: 18px;
+    transition: transform 0.2s ease-in;
+   
+    color: rgb(92, 162, 110);
+ color: rgb(255, 255, 255);
+
+}
+
+
+
+.track-name-dias-lime:hover{
+  
+  color: rgb(166, 165, 165);
+}
+
+
+
+
+
+/*---------TOCADISCOS------------
+
+.tocadiscos{
+  position: relative;
+  top: 48px;
+  left: 4px;
+  margin-top: 100px;
+margin-bottom: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 200px;
+  background-image: url("../assets/tocadiscos-dibujo.png");
+  background-size: 108%;
+  background-position: -16px -94px;
+  background-repeat: no-repeat;
+  z-index: 4;
+
+transition: 4s;
+
+}
+
+.tocadiscos-activo{
+  transition: 4s;
+  margin-bottom: 400px;
+}
+
+
+
+/*--------PÚA (INDEX)-----------
+
+.pua-container{
+  width: 75px;
+height: 140px;
+
+margin-left: 66%;
+
+transform-origin: 100% 0;
+
+position: relative;
+z-index: 25;
+}
+
+.pua-index{
+  background-image: url("../assets/pua_sin_base.png");
+  background-size: 600%;
+  background-position: -143px -130px;
+  position: relative;
+  
+  z-index: 100;
+  width: 62px;
+  height: 130px;
+  
+}
+
+
+
+@keyframes pua-animation{
+  0%{
+    transform: perspective(1000px) rotatex(10deg) rotatez(-40deg) translateX(-10px) translateY(-28x);
+
+  }
+  20%{
+    transform: perspective(1000px) rotatex(40deg) rotatez(-40deg) translateX(-10px) translateY(-28px);
+
+  }
+ 
+ 
+  80%{
+    
+    
+    transform: perspective(1000px) rotateX(40deg) rotatez(33deg) translateX(20px) translateY(10px);
+
+  }
+  
+  100%{
+    
+    
+    transform: perspective(1000px) rotateX(20deg) rotatez(33deg) translateX(20px) translateY(10px);
+
+  }
+
+
+}
+
+.pua-animation{
+  animation-delay: 3s;
+  animation: pua-animation 8s ease-in both;
+}
+*/
+
+
+
+
+  /*COMPARTIR EN R.R.S.S.*/
+
+  .compartir{
+    position: sticky;
+    top: 6px;
+    z-index: 100;
+     width: 80vw;
+     height: 50px;
+   
+    
+    color: var(--second-color);
+    margin-bottom: 40px;
+     margin-left: auto;
+     margin-right: auto;
+   padding-top: 1px;
+   padding-bottom: 3px;
+     text-align: center;
+    
+   }
+   
+   .compartir h4{
+   margin-top: 2px;
+
+   
+    font-weight: 100;
+    font-size: 16px;
+   }
+  .redes{
+    position: relative;
+  
+    display: inline-block;
+    
+    width: auto;
+    height: 20px;
+    
+    font-size: 14px;
+    /*border: solid 1px rgb(99, 96, 96, 0.7);
+   
+    border-radius: 5px; */
+    text-align: center;
+    
+    top: -15px;
+    color: var(--first-color);
+ 
+    text-decoration: none;
+    font-weight: 100;
+    
+    transition: color 0.3s ease-in;
+  }
+  
+  .redes:hover{
+     color: red;
+  }
+
+
+
+
+
+    /*---------VERSIÓN TABLET / DESKTOP--------------*/
+
+  @media screen and (min-width: 768px){
+ 
+.album-individual h3{
+  font-size: 35px;
+  width: 250px;
+}
+
+
+.compartir h4{
+  font-size: 18px;
+}
+
+.redes{
+  font-size: 13px;
+}
+
+
+.position-central{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    left: 0%;
+    top: -86px;
+}
+
+.inf2-position-central{
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    top: 86px;
+}
+
+  }
+
+
+
+
+
+
+/*--------versión DESKTOP-----------*/
+
+
+
+@media screen and (min-width: 1024px){
+
+
+  .compartir{
+
+    position: fixed;
+    width: 100%;
+    width: 180px;
+  
+  top: 5px;
+  left: 10px;
+  
+    
+  }
+
+}
+
+
+
+      /*-----------GALERY---------*/
+
+  .transp-foto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(49, 77, 155, 0);
+    z-index: 11;
+  }
+
+.galery-container{
+
+  width: 296px;
+  height: auto;
+ padding-top: 20px;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  overflow-x: hidden;
+overflow-y: hidden;
+
+}
+
+  .galery{
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-around;
+    transform: perspective(1000px) rotateY(30deg) rotateZ(-10deg);
+    filter: invert(1) sepia(0.8);
+    transition: 1s;
+    position: relative;
+    top: -20px;
+    z-index: 10;
+    
+  }
+
+  
+  .transp2-foto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    
+    background-color: rgba(49, 77, 155, 0);
+    z-index: 5;
+  }
+
+  .galery-2{
+    
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -300px;
+    
+    display: flex;
+   flex-direction: column;
+    justify-content: space-around;
+    transform: perspective(1000px) translateX(-15px) rotateY(-60deg) rotatex(30deg) rotateZ(5deg);
+    filter: invert(1) sepia(0.8);
+    transition: 1s;
+    position: relative;
+    z-index: 2;
+
+  }
+
+
+
+
+.capa-agujeros{
+  width: 100px;
+  position: relative;
+  
+
+  
+  height: 100px;
+  background: repeating-linear-gradient(90deg, rgb(84, 201, 148) 0%, rgb(84, 201, 148) 5%, transparent 5%, transparent 12%, rgb(84, 201, 148) 12%, rgb(84, 201, 148) 21%);
+}
+
+
+  .foto{
+
+    position: relative;
+  
+    width: 100%;
+    height: 70%;
+    background: repeating-linear-gradient(rgb(84, 201, 148) 0%, rgb(84, 201, 148) 5%, black 5%, rgb(0, 0, 0) 11%, rgb(84, 201, 148) 11%, rgb(84, 201, 148) 25%); 
+
+   
+  
+  }
+.foto img{
+  display: block;
+  width: 68%;
+  height: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: -100px;
+}
+
+
+.normal-galery{
+  width: 260px;
+  height: auto;
+  transition: 1s;
+  transform: none;
+  filter: none;
+  position: relative;
+  z-index: 100;
+  left: -3px;
+margin-bottom: 280px;
+}
+ 
+.normal-galery .foto{
+  border: solid rgb(132, 127, 127) 18px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  box-shadow: 4px 0 1rem 0.1rem rgb(40, 40, 40);
+
+}
+
+.normal-galery img{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+}
+
+
+/*
+     @media screen and (min-width: 768px){
+
+
+        .text-bio-container{
+            width: 450px;
+           height: 450px;
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+       .bio{
+           width: 450px;
+           height: 450px;
+        
+       }
+
+    
+
+     }
+
+
+
+
+
+
+            /*AGENDA
+
+
+     @keyframes scale{
+       0%{
+         transform: scale(0.7);
+       }
+       25%{
+         transform: scale(1);
+       }
+       75%{
+         transform: scale(1);
+       }
+       100%{
+         transform: scale(0.7);
+       }
+     }
+
+
+
+     .agenda{
+       text-align: center;
+       width: 300px;
+       height: auto;
+       margin-left: auto;
+       margin-right: auto;
+       
+       position: relative;
+     }
+
+    
+
+     .agenda img{
+      
+       width: 100%;
+       height: 100%;
+       border-radius: 20px;
+       box-shadow: 0rem 0rem 0.5rem 0.5rem white;
+       margin-top: 30px;
+       
+     }
+
+
+     .entradas{
+         margin-top: 50px;
+         display: inline-block;
+         width: 100px;
+         height: 40px;
+         font-size: 20px;
+         background-color: black;
+         color: red;
+         text-decoration: none;
+         padding-top: 7px;
+         border: 1px solid rgb(128, 255, 255);
+         border-radius: 10px;
+         box-shadow: 0rem 0rem 0.5rem 0.2rem white;
+         animation: scale 2s ease-in-out infinite;
+     }
+*/
+    /* @media screen and (min-width: 768px){
+       .agenda{
+           width: 450px;
+           
+       }
+
+     }
+     
+
+
+
+    TIENDA*/
+ /*
+.tienda{
+         margin-top: 150px;
+         margin-bottom: 40vh;
+       text-align: center;
+     }
+
+     .enlace-tienda{
+       background-color: aquamarine;
+       width: 150px;
+       height: 50px;
+       margin-left: auto;
+       margin-right: auto;
+       padding-top: 12.5px;
+       border-radius: 1rem;
+     }
+
+     .enlace-tienda a{
+       color: red;
+       font-size: 25px;
+       font-weight: bold;
+       
+       text-decoration: none;
+     
+     }
+
+    
+    
+     @media screen and (min-width: 768px){
+       
+        .tienda{
+            margin-top: 200px;
+          text-align: center;
+        }
+      }
+ */
+
+
+
+
+
+
+
+/*-----------DISC--------*/
+
+
+.disc-container-total{
+
+  position: relative;
+  width: 302px;
+  height: 302px;
+ top: -272px; /*lo coloca debajo del estuche del disco*/
+ left: -50px;
+background-color: rgb(60, 98, 98, 0);
+  
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /*NO OLVIDAR DE PONER*/
+    transform: scale(0.6);
+  z-index: 1;
+}
+
+
+.container-circle{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  
+
+  
+}
+
+/*
+@keyframes Disc-Animation{
+  0%{
+   transform: perspective(1000px) rotateY(0deg) scale(0.5) translateX(0px) translateY(-80px);
+   }
+   14%{
+   transform: perspective(1000px) rotateY(0deg) scale(0.55) translateX(0px) translateY(-670px);
+ 
+   }
+   35%{
+    transform: perspective(1000px) rotateY(40deg) scale(0.6) translateX(-20px) translateY(-553px);
+  
+    }
+  36%{
+   
+      transform: scale(0.63) perspective(1000px) rotateY(40deg) translateX(-50px) translateY(-550);
+  }
+  50%{
+   
+      transform: scale(0.63) perspective(1000px) rotateY(40deg) translateX(270px) translateY(-565px) rotateX(0deg);
+  }
+  80%{
+   
+      transform: scale(0.5) perspective(1000px) translateX(200px) translateY(-600px) rotatex(0deg) rotatez(0deg);
+  }
+  98%{
+   
+    transform: scale(0.7) perspective(1000px) translateX(65px) translateY(-1560px) rotatex(0deg);
+}
+
+  100%{
+   
+    transform: scale(0.7) perspective(1000px) translateX(65px) translateY(-1530px) rotatex(0deg);
+}
+}
+*/
+
+@keyframes Disc-Animation{
+  0%{
+   transform: perspective(1000px) rotateY(0deg) scale(0.5) translateX(0px);
+   }
+   14%{
+   transform: perspective(1000px) rotateY(0deg) scale(0.55) translateX(0px);
+ 
+   }
+   35%{
+    transform: perspective(1000px) rotateY(40deg) scale(0.6) translateX(-20px);
+  
+    }
+  36%{
+   
+      transform: scale(0.63) perspective(1000px) rotateY(40deg) translateX(-50px);
+  }
+  50%{
+   
+      transform: scale(0.63) perspective(1000px) rotateY(40deg) translateX(270px);
+  }
+  80%{
+   
+      transform: scale(0.5) perspective(1000px) translateX(150px) translateY(320px) rotatez(0deg);
+  }
+  98%{
+   
+    transform: scale(0.9) perspective(1000px) translateX(38px) translateY(320px);
+}
+
+  100%{
+   
+    transform: scale(0.9) perspective(1000px) translateX(38px) translateY(320px);
+}
+}
+
+.disc-animation{
+  position: relative;
+  z-index: 2;
+  
+animation: Disc-Animation 10s ease-in-out both;
+  
+
+  animation-play-state: running;
+}
+
+
+
+
+@keyframes Disc-Rotation{
+  0%{
+   z-index: 10;
+    
+      transform: scale(0.7) perspective(1000px) translateX(65px) translateY(370px) rotateZ(0deg);
+ 
+  
+  }
+  100%{
+    z-index: 10;
+    transform: scale(0.7) perspective(1000px) translateX(65px) translateY(370px) rotateZ(360deg);
+ 
+ 
+  }
+}
+
+
+
+
+
+
+.disc-animation-reverse{
+  
+animation-name: Disc-Animation;
+  animation-delay: 0s;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
+
+
+
+
+
+
+.disc-translate-insecta{
+    color: rgb(30, 30, 31);
+   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+   height: 100%;
+    border-radius: 50%;
+   
+  position: relative;
+  z-index: 20;
+  background-image: repeating-radial-gradient(rgb(26, 54, 51) 0% 1%, var(--insecta-rose) 2% 7%); 
+    
+  }
+
+
+.disc-translate-tach-felino{
+  color: rgb(0, 0, 0);
+ width: 100%;
+margin-right: auto;
+margin-left: auto;
+ height: 100%;
+  border-radius: 50%;
+
+  background-image: repeating-radial-gradient(black 0% 1%, rgb(95, 95, 95) 2% 7%);
+}
+
+
+.disc-translate-dias-lime{
+    color: rgb(167, 176, 187);
+   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+   height: 100%;
+    border-radius: 50%;
+  
+    background-image: repeating-radial-gradient(rgb(37, 37, 37) 0% 1%, rgb(11, 11, 11) 2% 7%); 
+   
+  }
+
+
+
+.disco-inclinado{
+
+    width: 100%;
+    height: 100%;
+  position: relative;
+     
+}
+
+
+
+
+/*-------repisa------*/
+
+/*
+.frente-repisa{
+  width: 270px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(2);
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 40;
+  top: 190px;
+}
+
+    
+.repisa-album-insecta{
+  top: 40px;
+    z-index: 15;
+  }
+
+  
+  .repisa-disc-insecta{
+   position: absolute;
+   top: 33px;
+    z-index: 13;
+  }
+
+
+  .repisa-album-tach-felino{
+    top: 40px;
+    z-index: 10;
+  }
+
+  .repisa-disc-tach-felino{
+    top: 33px;
+    
+    position: absolute;
+  }
+
+
+  .repisa-album-dias-lime{
+    top: 40px;
+    z-index: 6;
+  }
+
+  .repisa-disc-dias-lime{
+    position: absolute;
+    z-index: 1;
+    top: 33px;
+  }
+
+
+*/
+
+
+@keyframes rotatex-50{
+  0%{
+    transform: perspective(1000px) rotateX(0deg);
+  }
+  100%{
+    transform: perspective(1000px) rotateX(30deg);
+  }
+}
+
+
+.rotatex-50{
+
+  animation: rotatex-50 1s linear 8s both;
+  
+}
+
+
+
+
+
+.tapa-index{
+  top: 35%;
+   text-align: center;
+   width: 100%;
+   
+   position: absolute;
+
+ }
+ .tapa-index img{
+   border-radius: 50%;
+   width: 30%;
+   height: 30%;
+     }
+ 
+
+
+.tapa{
+  top: 37.5%;
+  left: 12.5%;
+   text-align: center;
+   width: 180px;
+   height: 180px;
+   
+   position: absolute;
+
+  
+  }
+ .tapa img{
+   border-radius: 50%;
+   width: 30%;
+   height: 30%;
+   animation: Disc-Rotating 1.818s linear infinite;
+   position: relative;
+   z-index: 15;
+     }
+
+.titulo-album{
+  position: absolute;
+  display: block;
+
+  width: 150px;
+  text-align: center;
+  top: -110px;
+  left: 25%;
+color: var(--first-color);
+
+}
+/*
+
+     @keyframes Visited-Disc{
+      0%{
+        transform: perspective(1000px) rotateY(0deg) scale(1) translateX(0px) translateY(0px);
+    
+      }
+
+      10%{
+        transform: perspective(1000px) rotateY(0deg) scale(1) translateX(0px) translateY(-350px);
+    
+      }
+     
+       30%{
+       transform: perspective(1000px) rotateY(40deg) scale(0.67) translateX(-110px) translateY(-410px);
+     
+       }
+       60%{
+       transform: perspective(1000px) rotateY(40deg) scale(0.67) translateX(-110px) translateY(-410px);
+     
+       }
+       80%{
+        transform: perspective(1000px) rotateY(0deg) scale(1) translateX(0px) translateY(-350px);
+    
+       }
+       100%{
+        transform: perspective(1000px) rotateY(0deg) scale(1) translateX(0px) translateY(-350px);
+    
+       }
+     }
+
+*/
+
+
+@keyframes Visited-Disc{
+  0%{
+    transform: perspective(1000px) rotateY(0deg) scale(1) translateX(0px);
+
+  }
+
+  10%{
+    transform: perspective(1000px) rotateY(0deg) scale(1) translateX(0px);
+
+  }
+ 
+   30%{
+   transform: perspective(1000px) rotateY(40deg) scale(0.67) translateX(-110px);
+ 
+   }
+   60%{
+   transform: perspective(1000px) rotateY(40deg) scale(0.67) translateX(-110px);
+ 
+   }
+   80%{
+    transform: perspective(1000px) rotateY(0deg) scale(1) translateX(0px);
+
+   }
+   100%{
+    transform: perspective(1000px) rotateY(0deg) scale(1) translateX(0px);
+
+   }
+ }
+
+    
+
+ 
+
+
+ 
+.visited-disc-1{
+  animation-name: Visited-Disc, Correr-Album-1;
+  animation-delay: 0s, 11s;
+  animation-duration: 14s, 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+     
+ 
+  animation-play-state: running;
+ }
+
+
+ .visited-disc-2{
+  animation-name: Visited-Disc, Correr-Album-2;
+  animation-delay: 0s, 11s;
+  animation-duration: 14s, 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+     
+ 
+  animation-play-state: running;
+ }
+
+
+
+
+
+ .visited-disc-3{
+  animation-name: Visited-Disc, Correr-Album-3;
+  animation-delay: 0s, 11s;
+  animation-duration: 14s, 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+     
+  animation-play-state: running;
+ }
+
+
+
+
+.opacity-0-3{
+  opacity: 0.3;
+}
+
+
+
+
+
+     .contact-card h5{
+      font-size: 24px;
+      font-weight: 100;
+    }
+    
+    
+    .email a{
+      color: aqua;
+      font-family: 'invernaculus', Courier, monospace;
+      font-size: 18px;
+      
+    }
+    
+
+
+
+/*--------FUNCIONALIDADES---------*/
+
+.boton-normal{
+  
+  background-color: rgb(197, 143, 43, 0);
+  width: 270px;
+  height: 270px;
+  
+  
+  border: solid 3px rgb(0, 0, 0, 0);
+ 
+
+}
+
+
+.box-shadow{
+
+   box-shadow: 5px 0 1rem 0.02rem rgb(41, 41, 41);
+
+}
+
+
+.running{
+  
+    animation-play-state: running;
+  }
+  
+
+
+
+/*--------------SECTIONS------------*/
+  
+.video-en-las-sombras{
+
+  width: 280px;
+  height: 400px;
+  margin-left: auto;
+margin-right: auto;
+}
+/*
+.music{
+
+  width: 290px;
+  height: 700px;
+  margin-left: auto;
+margin-right: auto;
+
+
+}
+
+.music-activo{
+  transition: 14s;
+  height: 1200px;
+}
+*/
+
+/*-------SECTION MUSIC---------*/
+
+.sections-container-total{
+  margin-top: 0px;
+  margin-bottom: 160px;
+  
+  padding-top: 0px;
+  padding-bottom: 50px;
+width: 100%;
+height: auto;
+ background: linear-gradient(90deg, rgb(32, 49, 62)0%, rgb(32, 49, 62) 13%, rgb(85, 114, 142) 18%, rgb(85, 114, 142) 82%, rgb(32, 49, 62) 87%, rgb(32, 49, 62) 100%);
+ background-size: 5%;
+
+ 
+ /*box-shadow: 5px 0 3rem 2rem rgb(63, 117, 136); 
+*/
+
+
+}
+
+
+
+
+    
+@media screen and (min-width: 358px) {
+     
+  .body-home{
+    background-size: 3%;
+   }
+  .sections-container-total{
+    background-size: 3.5%;
+  }
+  
+}
+
+
+@media screen and (min-width: 768px){
+  .body-home{
+    background-size: 1.5%;
+   }
+   .sections-container-total{
+    background-size: 2%;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px){
+ 
+   .sections-container-total{
+    
+display: grid; 
+
+grid-template-columns: repeat(2, 35%);
+transition: all 1s;
+justify-content: space-around;
+margin-top: 60px;
+  }
+
+}
+
+/*---------------GALERY----------------------------*/
+
+.galeria{
+  width: 290px;
+  height: auto;
+  margin-left: auto;
+
+margin-right: auto;
+margin-bottom: 150px;
+margin-top: 80px;
+padding-top: 1px;
+padding-bottom: 50px;
+box-shadow: 5px 0px 1rem 0.4rem rgb(38, 38, 38);
+background: linear-gradient(90deg, rgb(25, 25, 29) 0%, rgb(25, 25, 29) 25%, rgb(44, 44, 45) 30%, rgb(44, 44, 45) 70%, rgb(25, 25, 29) 75%, rgb(25, 25, 29)100%);
+ 
+background-size: 8%;
+
+
+}
+
+
+@media screen and (min-width: 768px){
+  
+  .galeria{
+    width: 290px;
+    height: 550px;
+    margin-left: auto;
+    margin-top: 235px;
+  
+  margin-right: auto;
+  
+   }
+    
+   .galeria-grande1{
+    height: auto;
+   }
+   .galeria-grande2{
+    height: auto;
+   }
+ 
+
+  }
+
+
+
+
+
+
+  .agujero{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+  background-image: radial-gradient(circle 6.5px, rgb(85, 114, 142) 0%, rgb(35, 58, 79) 85%, rgb(243, 240, 240) 86%);
+    border-radius: 50%;
+    top: 130px;
+    left: 130px;
+    z-index: 10;
+  }
+
+
+  
